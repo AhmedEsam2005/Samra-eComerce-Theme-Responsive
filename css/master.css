@@ -152,6 +152,9 @@ body {
         margin-top: 0;
         font-size: 25px;
     }
+    .item-box .img img {
+        height: 200px;
+    }
 }
 .item-box .caption p {
     width: 70%;
