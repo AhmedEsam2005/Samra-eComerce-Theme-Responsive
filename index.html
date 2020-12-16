@@ -6,9 +6,17 @@
         <title>eComerce Templete Responsive</title>
         <link href="https://fonts.googleapis.com/css2?family=Langar&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/master.css">
     </head>
-    <body>
+    <body class >
+        <!-- Start Dark Btn -->
+        <div class="dark-btn">
+            <div class="out">
+                <i class = 'fa fa-moon-o fa-2x icon'></i>
+            </div>
+        </div>
+        <!-- End Dark Btn -->
         <header class = 'top-header'>
             <div class="container">
                 <div class="col-md-2">
@@ -19,7 +27,7 @@
                 <div class="col-md-8">
                     <div class="search text-center">
                         <form>
-                                <input type="text" class="form-control form-inline input-lg" >
+                                <input type="text" class="form-control form-inline" >
                                 <span class = 'glyphicon glyphicon-search prefix'></span>
                         </form>
                     </div>
@@ -33,8 +41,8 @@
             </div>
         </header>
         <!-- Start Navbar -->
-        <nav class="navbar navbar-default">
-            <div class="container">
+        <nav class="navbar navbar-default ">
+            <div class="container-fluid text-center">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -321,6 +329,7 @@
     <div class="copy">
         <div class="container text-center">© 2020 Samra Cart - Theme by Ahmed</div>
     </div>
+    <div id="show"></div>
     <script src="js/jquery.js"></script>
     <script src = 'js/bootstrap.min.js'></script>
     <script src = 'js/plugin.js'></script>
