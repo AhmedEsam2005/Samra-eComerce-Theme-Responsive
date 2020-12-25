@@ -14,6 +14,14 @@ body {
 .no-margin {
     margin-top: 0 !important;
 }
+/*Start Choose*/
+.overlay {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 999999999999;
+    background-color: rgba(1,1,1,1);
+} 
 /* Start Landing*/
 .landing-overlay {
     width: 100%;
@@ -137,15 +145,27 @@ body {
     font-size: 20px;
     color: var(--main-color);
 }
-.top-header .basket:hover span {
-    transition: .8s;
-    transform: scale(1.2, 1.2);
-    transform: rotateY(180deg);
-}
 .top-header .basket h2 {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
+    font-size: 32px;
     
+}
+.top-header .basket h2 span.number {
+    background: #a94442;
+    color: #fff;
+    font-size: 15px;
+    position: absolute;
+    top: 0;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+    text-align: center;
+    left: calc(50% - 11px);    
+    font-weight: bold;
+}
+@media(max-width : 992px) {
+    .top-header .basket h2 span.number {left: calc(50% - 11px)}
 }
 .top-header .basket h2 span {
     margin-right: 15px;
@@ -337,12 +357,10 @@ h2 {
     font-size: 30px;
     font-weight: bold;
     color: var(--main-color);
-    margin-top: 100px;
 }
 .feature .product .price{
     font-size: 30px;
-    font-weight: bold;
-    color: var(--main-color);
+    color: #333;
     margin-right: 25px;
 }
 .feature .product span{margin-left: 5px;}
